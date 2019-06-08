@@ -60,8 +60,13 @@ const NavListItem = styled.li`
   &:before {
     display: block;
     content: '0' counter(item) '.';
+<<<<<<< HEAD
     color: ${colors.green};
     font-size: ${fontSizes.sm};
+=======
+    color: ${colors.primary};
+    font-size: ${fontSizes.small};
+>>>>>>> Introduce primary and transPrimary colors into project
     margin-bottom: 5px;
   }
 `;

@@ -16,8 +16,13 @@ const StyledContainer = styled(Section)`
 `;
 const StyledHeading = styled(Heading)`
   display: block;
+<<<<<<< HEAD
   color: ${colors.green};
   font-size: ${fontSizes.md};
+=======
+  color: ${colors.primary};
+  font-size: ${fontSizes.medium};
+>>>>>>> Introduce primary and transPrimary colors into project
   font-family: ${fonts.SFMono};
   font-weight: normal;
   margin-bottom: 20px;

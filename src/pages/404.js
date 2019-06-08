@@ -13,7 +13,7 @@ const StyledMainContainer = styled(Main)`
   height: 100vh !important;
 `;
 const StyledTitle = styled.h1`
-  color: ${colors.green};
+  color: ${colors.primary};
   font-family: ${fonts.SFMono};
   font-size: 12vw;
   line-height: 1;
