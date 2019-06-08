@@ -151,11 +151,11 @@ const StyledListItem = styled.li`
 const StyledListLink = styled(Link)`
   padding: 12px 10px;
 `;
-const StyledResumeButton = styled.a`
-  ${mixins.smallButton};
-  margin-left: 10px;
-  font-size: ${fontSizes.smish};
-`;
+// const StyledResumeButton = styled.a`
+//   ${mixins.smallButton};
+//   margin-left: 10px;
+//   font-size: ${fontSizes.smish};
+// `;
 
 const DELTA = 5;
 
@@ -277,21 +277,6 @@ class Nav extends Component {
                   ))}
               </TransitionGroup>
             </StyledList>
-
-            <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames="fadedown" timeout={3000}>
-                  <div style={{ transitionDelay: `600ms` }}>
-                    <StyledResumeButton
-                      href="/resume.pdf"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer">
-                      Resume
-                    </StyledResumeButton>
-                  </div>
-                </CSSTransition>
-              )}
-            </TransitionGroup>
           </StyledLink>
         </StyledNav>
 
