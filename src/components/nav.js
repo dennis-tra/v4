@@ -41,19 +41,20 @@ const StyledNav = styled.nav`
   counter-reset: item 0;
   z-index: 12;
 `;
-const StyledLogo = styled.div`
+const Logo = styled.div`
   ${mixins.flexCenter};
-  a {
-    display: block;
-    color: ${colors.green};
-    width: 42px;
-    height: 42px;
-    &:hover,
-    &:focus {
-      svg {
-        fill: ${colors.transGreen};
-      }
-    }
+  flex-direction: row;
+`;
+const WebsiteTitle = styled.a`
+  margin: 0 0 0 20px;
+`;
+const LogoLink = styled.a`
+  display: block;
+  color: ${colors.green};
+  width: 42px;
+  height: 42px;
+  &:hover,
+  &:focus {
     svg {
       fill: none;
       transition: ${theme.transition};
@@ -228,7 +229,6 @@ class Nav extends Component {
 
   render() {
     const { isMounted, menuOpen, scrollDirection } = this.state;
-    const { location } = this.props;
 
     return (
       <StyledContainer scrollDirection={scrollDirection}>
@@ -239,17 +239,14 @@ class Nav extends Component {
           <TransitionGroup component={null}>
             {isMounted && (
               <CSSTransition classNames="fade" timeout={3000}>
-                <StyledLogo>
-                  {location.pathname === '/' ? (
-                    <a href="/" aria-label="home">
-                      <IconLogo />
-                    </a>
-                  ) : (
-                    <Link to="/" aria-label="home">
-                      <IconLogo />
-                    </Link>
-                  )}
-                </StyledLogo>
+                <Logo>
+                  <LogoLink href="/" aria-label="home">
+                    <IconLogo />
+                  </LogoLink>
+                  <WebsiteTitle href="#" aria-label="Home">
+                    dtrautwein.eu
+                  </WebsiteTitle>
+                </Logo>
               </CSSTransition>
             )}
           </TransitionGroup>
