@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Head, Loader, Nav, Social, Email, Footer } from '@components';
+import { Head, Nav, Social, Email, Footer } from '@components';
 import styled from 'styled-components';
 import { GlobalStyle, theme } from '@styles';
 const { colors, fontSizes, fonts } = theme;
@@ -110,7 +110,7 @@ const Layout = ({ children, location }) => {
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent id="content">
-              <Nav location={location} />
+              <Nav />
               <Social />
               <Email />
               {children}
