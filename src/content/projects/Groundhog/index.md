@@ -9,4 +9,4 @@ tech:
 show: 'true'
 ---
 
-Groundhog is a telegram bot to track your habits and save it to Google sheets.
+Groundhog is a telegram bot to track your habits and save it to Google sheets. It sends three reminders each day that you can answer right in telegram.

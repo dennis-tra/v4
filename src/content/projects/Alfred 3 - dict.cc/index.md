@@ -9,4 +9,4 @@ tech:
 show: 'true'
 ---
 
-Alfred 3 workflow to get "bidirectional" translations from dict.cc.
+Alfred 3 workflow to get "bidirectional" translations from dict.cc. So far my most popular repository - according to its star rating.
