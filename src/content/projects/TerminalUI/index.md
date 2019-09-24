@@ -1,7 +1,7 @@
 ---
 date: '4'
 title: 'Hashicorp Vault terminal UI'
-image: './screenshot.png'
+image: ''
 external: 'https://github.com/hashicorp/vault/pull/6108'
 github: 'https://github.com/dennis-tra/vault'
 tech:

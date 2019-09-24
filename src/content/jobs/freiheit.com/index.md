@@ -9,7 +9,7 @@ url: 'https://freiheit.com/'
 
 - Write modern, performant and maintainable code for an industry-changing project of a large automotive corporation
 
-- Work in a micro-service environment powered by Kubernetes in the Azure cloud.
+- Work in a micro-service environment powered by Terraform and Kubernetes in the Azure cloud.
 
 - Contribute to [protoactor-go](https://github.com/AsynkronIT/protoactor-go), an open-source Go library that provides "ultra fast distributed actors for Go"
 
