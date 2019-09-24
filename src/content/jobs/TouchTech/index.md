@@ -11,4 +11,4 @@ url: 'https://www.touchtech.co.nz'
 
 - Developed and shipped an iOS applications for tracking the performance of employees using Swift 2.3 leveraging third-party and internal APIs - [Demo-Video](https://youtu.be/yJqmHGGcbgc)
 
-- Interfaced with clients on a weekly basis and both apps were developed on my own
+- Interfaced with clients on a weekly basis and both apps were developed solely on my own

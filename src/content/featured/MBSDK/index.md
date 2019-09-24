@@ -6,9 +6,8 @@ github: 'https://github.com/Daimler/MBSDK-CarKit-iOS'
 external: 'https://developer.mercedes-benz.com/sdks'
 tech:
   - Go
-  - protoactor
+  - protobuf/GRPC
   - Terraform
-  - Websockets
   - Kubernetes
 show: 'true'
 ---
