@@ -7,7 +7,7 @@ external: 'http://www.iaeste.uni-kiel.de/en/'
 tech:
   - Jekyll
   - Bootstrap
-show: 'true'
+show: 'false'
 ---
 
 An internationalized static website for the [IAESTE](https://iaeste.org/) local committee in Kiel. This website is targeted to students who want to do an internship abroad, foreign interns that come to Kiel and employers who want to offer a position.
