@@ -1,0 +1,12 @@
+**.cache
+**node_modules
+**.editorconfig
+**.eslintrc
+**.gitignore
+**Makefile
+**prettier.config.js
+**README.md
+**Dockerfile
+**.dockerignore
+
+public
