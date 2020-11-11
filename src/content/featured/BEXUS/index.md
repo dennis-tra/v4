@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '1'
 title: 'BEXUS'
 cover: './bexus.png'
 external: 'http://adam.physik.uni-kiel.de/'

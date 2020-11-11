@@ -3,7 +3,7 @@ date: '2018-05-14'
 title: 'Software Engineer'
 company: 'freiheit.com'
 location: 'Hamburg, Germany'
-range: 'Jul 2018 - Present'
+range: 'Jul 2018 - Apr 2020'
 url: 'https://freiheit.com/'
 ---
 
