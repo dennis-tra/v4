@@ -109,6 +109,7 @@ const FeaturedImg = styled(Img)`
   border-radius: ${theme.borderRadius};
   position: relative;
   mix-blend-mode: multiply;
+  z-index: -1;
   filter: grayscale(100%) contrast(1) brightness(90%);
   ${media.tablet`
     object-fit: cover;
@@ -229,6 +230,7 @@ const Featured = ({ data }) => {
                       <a
                         href={external}
                         target="_blank"
+                        style={{ zIndex: '2' }}
                         rel="nofollow noopener noreferrer"
                         aria-label="External Link">
                         {title}
