@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '4'
 title: 'Mercedes Benz Mobile SDK'
 cover: './logo_developers_sharing.jpg'
 github: 'https://github.com/Daimler/MBSDK-CarKit-iOS'

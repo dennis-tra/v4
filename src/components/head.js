@@ -53,7 +53,7 @@ const Head = ({ metadata }) => (
     <script
       async
       defer
-      data-domain="plausible.dtrautwein.eu"
+      data-domain="dtrautwein.eu"
       src="https://plausible.dtrautwein.eu/js/plausible.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57x57} />

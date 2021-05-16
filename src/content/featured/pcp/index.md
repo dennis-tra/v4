@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '3'
 title: 'PCP - A Fully Decentralized Peer-to-Peer File Transfer Tool	'
 cover: './pcp-illustration.jpeg'
 github: 'https://github.com/dennis-tra/pcp'
