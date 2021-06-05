@@ -8,7 +8,7 @@ tech:
   - CAD
   - Python
   - GEANT4
-show: 'true'
+showInProjects: true
 ---
 
 Participated in a **Ba**lloon **Ex**periment for **U**niversity **S**tudents. Developed, built and performed a space qualified experiment on a stratospheric research balloon as part of an [official mission](http://rexusbexus.net/) from the European Space Agency. Measured the angular distribution of charged particles in the atmosphere.
