@@ -281,8 +281,7 @@ const Jobs = () => {
                     id={`panel-${i}`}
                     role="tabpanel"
                     tabIndex={activeTabId === i ? '0' : '-1'}
-                    aria-labelledby={`tab-${i}`}
-                    aria-hidden={activeTabId !== i}
+                    // aria-labelledby={`tab-${i}`} <- Attribute aria-hidden is unnecessary for elements that have attribute hidden
                     hidden={activeTabId !== i}>
                     <h3>
                       <span>{title}</span>

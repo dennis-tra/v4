@@ -12,9 +12,9 @@ const IconLogo = () => (
       <g id="Artboard" transform="translate(-613.000000, -278.000000)">
         <g id="Favicon-Cube" transform="translate(595.000000, 278.000000)">
           <g id="Blue-Cube">
-            <g id="Group">
+            <g id="Group-Outer">
               <g id="Base-Cube">
-                <g id="Group" transform="translate(1.750000, 0.000000)">
+                <g id="Group-Inner" transform="translate(1.750000, 0.000000)">
                   <polygon
                     id="outer-cube"
                     fill="#4A4A4A"

@@ -7,9 +7,9 @@
         <g id="Artboard" transform="translate(-613.000000, -278.000000)">
             <g id="Favicon-Cube" transform="translate(595.000000, 278.000000)">
                 <g id="Blue-Cube">
-                    <g id="Group">
+                    <g id="Group-Outer">
                         <g id="Base-Cube">
-                            <g id="Group" transform="translate(1.750000, 0.000000)">
+                            <g id="Group-Innter" transform="translate(1.750000, 0.000000)">
                                 <polygon id="outer-cube" fill="#4A4A4A" points="123.25 0 229.987631 62.5 229.987631 187.5 123.25 250 16.512369 187.5 16.512369 62.5"></polygon>
                                 <polygon id="floor" fill="#303030" points="16.5125 187.5 123.25 250 229.9875 187.5 123.25 125"></polygon>
                                 <polygon id="ceiling" fill="#303030" points="16.5125 62.5 123.25 125 229.9875 62.5 123.25 0"></polygon>

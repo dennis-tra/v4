@@ -147,7 +147,7 @@ const blogPage = ({ location, data }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="blog" />
+      <Helmet title="Blog" />
 
       <StyledMainContainer>
         <header>

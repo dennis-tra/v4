@@ -247,9 +247,9 @@ const Menu = () => {
           menuOpen={menuOpen}
           ref={buttonRef}
           aria-label="Menu">
-          <div className="ham-box">
-            <div className="ham-box-inner" />
-          </div>
+          <span className="ham-box">
+            <span className="ham-box-inner" />
+          </span>
         </StyledHamburgerButton>
 
         <StyledSidebar menuOpen={menuOpen} aria-hidden={!menuOpen} tabIndex={menuOpen ? 1 : -1}>

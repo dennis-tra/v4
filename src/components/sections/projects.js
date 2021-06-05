@@ -241,7 +241,7 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
+            <a href={external ?? github} rel="noopener noreferrer" target="_blank">
               {title}
             </a>
           </h3>
