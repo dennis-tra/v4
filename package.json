@@ -21,7 +21,7 @@
     "clean": "gatsby clean",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "deploy": "yarn build && rsync -pr ./public/ dennis@dtrautwein.eu:/var/www/dtrautwein.eu/public"
+    "deploy": "yarn build && rsync -pr --delete ./public/ dennis@dtrautwein.eu:/var/www/dtrautwein.eu/public"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
