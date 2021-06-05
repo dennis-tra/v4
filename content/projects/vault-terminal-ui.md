@@ -1,5 +1,5 @@
 ---
-date: '4'
+date: '2019-01-25'
 title: 'Hashicorp Vault terminal UI'
 image: ''
 external: 'https://github.com/hashicorp/vault/pull/6108'

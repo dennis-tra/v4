@@ -120,7 +120,7 @@ const StyledLinks = styled.div`
     }
   }
 
-  .resume-button {
+  .blog-button {
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
     font-size: var(--fz-xs);
@@ -172,9 +172,9 @@ const Nav = ({ isHome }) => {
     </div>
   );
 
-  const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      Resume
+  const BlogLink = (
+    <a className="blog-button" href="/blog/">
+      Blog
     </a>
   );
 
@@ -194,7 +194,7 @@ const Nav = ({ isHome }) => {
                     </li>
                   ))}
               </ol>
-              <div>{ResumeLink}</div>
+              <div>{BlogLink}</div>
             </StyledLinks>
 
             <Menu />
@@ -228,7 +228,7 @@ const Nav = ({ isHome }) => {
                 {isMounted && (
                   <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                     <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
-                      {ResumeLink}
+                      {BlogLink}
                     </div>
                   </CSSTransition>
                 )}

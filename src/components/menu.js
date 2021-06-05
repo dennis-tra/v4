@@ -147,7 +147,7 @@ const StyledSidebar = styled.aside`
     }
   }
 
-  .resume-link {
+  .blog-link {
     ${({ theme }) => theme.mixins.bigButton};
     padding: 18px 50px;
     margin: 10% auto 0;
@@ -266,8 +266,8 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href="/resume.pdf" className="resume-link">
-              Resume
+            <a href="/blog/" className="blog-link">
+              Blog
             </a>
           </nav>
         </StyledSidebar>
