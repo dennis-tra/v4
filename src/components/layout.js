@@ -19,19 +19,6 @@ const StyledContent = styled.div`
 const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
 
-  // Sets target="_blank" rel="noopener noreferrer" on external links
-  const handleExternalLinks = () => {
-    const allLinks = Array.from(document.querySelectorAll('a'));
-    if (allLinks.length > 0) {
-      allLinks.forEach(link => {
-        if (link.host !== window.location.host) {
-          link.setAttribute('rel', 'noopener noreferrer');
-          link.setAttribute('target', '_blank');
-        }
-      });
-    }
-  };
-
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.substring(1); // location.hash without the '#'
@@ -44,7 +31,16 @@ const Layout = ({ children, location }) => {
       }, 0);
     }
 
-    handleExternalLinks();
+    // Sets target="_blank" rel="noopener noreferrer" on external links
+    const allLinks = Array.from(document.querySelectorAll('a'));
+    if (allLinks.length > 0) {
+      allLinks.forEach(link => {
+        if (link.host !== window.location.host) {
+          link.setAttribute('rel', 'noopener noreferrer');
+          link.setAttribute('target', '_blank');
+        }
+      });
+    }
   });
 
   return (

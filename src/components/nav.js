@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { navLinks } from '@config';
+import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo } from '@components/icons';
 
@@ -26,6 +27,27 @@ const StyledHeader = styled.header`
   }
   @media (max-width: 768px) {
     padding: 0 25px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    ${props =>
+    props.scrollDirection === 'up' &&
+      !props.scrolledToTop &&
+      css`
+        height: var(--nav-scroll-height);
+        transform: translateY(0px);
+        background-color: var(--transNavy);
+        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+      `};
+
+    ${props =>
+    props.scrollDirection === 'down' &&
+      !props.scrolledToTop &&
+      css`
+        height: var(--nav-scroll-height);
+        transform: translateY(calc(var(--nav-scroll-height) * -1));
+        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+      `};
   }
 `;
 
@@ -103,39 +125,65 @@ const StyledLinks = styled.div`
   }
 `;
 
-const Nav = ({ isHome }) => (
-  <StyledHeader>
-    <StyledNav>
-      <div className="logo" tabIndex="-1">
-        {isHome ? (
-          <a href="/" aria-label="home">
-            <IconLogo />
-          </a>
-        ) : (
-          <Link to="/" aria-label="home">
-            <IconLogo />
-          </Link>
-        )}
-      </div>
-      <StyledLinks>
-        <ol>
-          {navLinks &&
-            navLinks.map(({ url, name }, i) => (
-              <li key={i}>
-                <Link to={url}>{name}</Link>
-              </li>
-            ))}
-        </ol>
-        <div>
-          <a className="blog-button" href="/blog/">
-            Blog
-          </a>
-        </div>
-      </StyledLinks>
-      <Menu />
-    </StyledNav>
-  </StyledHeader>
-);
+const Nav = ({ isHome }) => {
+  const scrollDirection = useScrollDirection('down');
+  const [scrolledToTop, setScrolledToTop] = useState(true);
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  const handleScroll = () => {
+    setScrolledToTop(window.pageYOffset < 50);
+  };
+
+  useEffect(() => {
+    if (prefersReducedMotion) {
+      return;
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const Logo = (
+    <div className="logo" tabIndex="-1">
+      {isHome ? (
+        <a href="/" aria-label="home">
+          <IconLogo />
+        </a>
+      ) : (
+        <Link to="/" aria-label="home">
+          <IconLogo />
+        </Link>
+      )}
+    </div>
+  );
+
+  return (
+    <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
+      <StyledNav>
+        {Logo}
+        <StyledLinks>
+          <ol>
+            {navLinks &&
+              navLinks.map(({ url, name }, i) => (
+                <li key={i}>
+                  <Link to={url}>{name}</Link>
+                </li>
+              ))}
+          </ol>
+          <div>
+            <Link className="blog-button" to="/blog/">
+              Blog
+            </Link>
+          </div>
+        </StyledLinks>
+        <Menu />
+      </StyledNav>
+    </StyledHeader>
+  );
+};
 
 Nav.propTypes = {
   isHome: PropTypes.bool,

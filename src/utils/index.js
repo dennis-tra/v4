@@ -3,9 +3,6 @@ export const hex2rgba = (hex, alpha = 1) => {
   return `rgba(${r},${g},${b},${alpha})`;
 };
 
-export const navDelay = 1; // milliseconds
-export const loaderDelay = 0; // I disabled the loader
-
 export const KEY_CODES = {
   ARROW_LEFT: 'ArrowLeft',
   ARROW_LEFT_IE11: 'Left',
