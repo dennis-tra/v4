@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: 'https://dtrautwein.eu', // No trailing slash allowed!
     image: '/me.jpg', // Path to your image you placed in the 'static' folder
     twitterUsername: '@dtrautwein_eu',
+    socialImage: '/og.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
