@@ -32,6 +32,12 @@ const PrismStyles = css`
     font-size: var(--fz-md);
   }
 
+  @media only screen and (max-width: 600px) {
+    .gatsby-highlight {
+      font-size: var(--fz-xxs);
+    }
+  }
+
   .gatsby-highlight code[class*='language-'],
   .gatsby-highlight pre[class*='language-'] {
     height: auto !important;
