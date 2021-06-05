@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'PEEM-Controller'
-cover: './screenshot.png'
+cover: './images/peem-controller.png'
 github: 'https://github.com/dennis-tra/peem-controller'
 # external: 'https://github.com/dennis-tra/peem-controller'
 tech:
