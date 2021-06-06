@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Layout } from '@components';
 import { IconBookmark } from '@components/icons';
@@ -146,9 +145,11 @@ const blogPage = ({ location, data }) => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={location}>
-      <Helmet title="Blog" />
-
+    <Layout
+      location={location}
+      meta={{
+        title: 'Blog',
+      }}>
       <StyledMainContainer>
         <header>
           <h1 className="big-heading">Blog</h1>

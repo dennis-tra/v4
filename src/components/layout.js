@@ -16,7 +16,7 @@ const StyledContent = styled.div`
   min-height: 100vh;
 `;
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children, location, meta = {} }) => {
   const isHome = location.pathname === '/';
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <Head />
+      <Head meta={meta} />
 
       <div id="root">
         <ThemeProvider theme={theme}>
@@ -74,6 +74,7 @@ const Layout = ({ children, location }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   location: PropTypes.object.isRequired,
+  meta: PropTypes.object,
 };
 
 export default Layout;

@@ -1,6 +1,7 @@
 ---
 title: Markdown Test File
 description: abc234
+image: ./image.jpg
 date: 2019-12-07
 draft: false
 slug: /blog/markdown-playground
