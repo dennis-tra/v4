@@ -173,11 +173,11 @@ const Nav = ({ isHome }) => {
                 </li>
               ))}
           </ol>
-          <div>
+          {/* <div>
             <Link className="blog-button" to="/blog/">
               Blog
             </Link>
-          </div>
+          </div> */}
         </StyledLinks>
         <Menu />
       </StyledNav>

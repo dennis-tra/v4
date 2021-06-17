@@ -266,9 +266,9 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href="/blog/" className="blog-link">
+            {/* <a href="/blog/" className="blog-link">
               Blog
-            </a>
+            </a> */}
           </nav>
         </StyledSidebar>
       </div>
