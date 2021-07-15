@@ -45,11 +45,11 @@ const StyledHeroSection = styled.section`
 const Hero = () => {
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Dennis Trautwein.</h2>;
-  const three = <h3 className="big-heading">I build things for computers.</h3>;
+  const three = <h3 className="big-heading">It's nice to meet you!</h3>;
   const four = (
     <p>
       I'm a physicist working as a software engineer based in Switzerland currently specializing in
-      trustless peer to peer networks as part of a PhD endeavour.
+      peer to peer systems as part of a PhD endeavour.
     </p>
   );
   const five = (
