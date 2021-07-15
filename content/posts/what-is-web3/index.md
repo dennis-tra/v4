@@ -17,6 +17,7 @@ The Internet touches almost all aspects of the modern life in the developed worl
 
 ![Diagram that shows the global number of internet users from 2005 (1.1 Billion) to 2019 (4 Billion). Further the increase is extrapolated until 2029 (6 Billion). The data from 2005 until 2019 is taken from statista.com.](./global-number-of-internet-users.png)
 
+![Diagram that shows the global number of internet users from 2005 (1.1 Billion) to 2019 (4 Billion). Further the increase is extrapolated until 2029 (6 Billion). The data from 2005 until 2019 is taken from statista.com.](./network-connected-devices-per-person.png)
 Although these service have such a strong influence in our daily lifes and most importantly in our human interactions they have not the same legitimization as similarly influencial instituations based on democratic principles.
 
 This imbalance of power between corporations that can control the way how a large portions of our society live, think and interact and the say that this portion has in the decision making process about how these platforms work hides a huge risk.
