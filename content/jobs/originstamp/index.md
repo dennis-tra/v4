@@ -11,6 +11,4 @@ url: 'https://freiheit.com/'
 
 - Introduced Terraform as an infrastructure as code solution.
 
-- Introduced Hashicorp Vault as a key managment solution.
-
 - Worked full stack along an Angular PWA, Hugo static site, Spring Boot micro-services, Ansible VM/NAS provisioning.
